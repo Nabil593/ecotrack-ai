@@ -17,7 +17,8 @@ import {
   ChevronRight,
   Command,
   ArrowUpRight,
-  LucideIcon
+  LucideIcon,
+  Leaf
 } from "lucide-react";
 
 interface NavItem {
@@ -60,16 +61,15 @@ export default function Sidebar({ isAdmin = false, sidebarOpen = false, setSideb
     >
       {/* Header */}
       <div className={`h-20 px-6 border-b ${isAdmin ? "border-slate-800" : "border-emerald-800/40"} flex items-center justify-between shrink-0`}>
-        <Link href="/dashboard" className="flex items-center space-x-3 group">
-          <div className={`w-9 h-9 rounded-xl ${isAdmin ? "bg-rose-500/20 text-rose-400" : "bg-emerald-500/20 text-emerald-300"} flex items-center justify-center font-bold text-sm`}>
-            {isAdmin ? <ShieldAlert className="w-5 h-5" /> : <Command className="w-5 h-5" />}
-          </div>
-          <div>
-            <span className="text-base font-extrabold text-white block">
-              EcoTrack <span className={isAdmin ? "text-rose-400" : "text-emerald-400"}>{isAdmin ? "Admin" : "AI"}</span>
-            </span>
-          </div>
-        </Link>
+        {/* Logo Section */}
+                <Link href="/" className="flex items-center gap-1.5 group">
+                    <div>
+                        <Leaf className="w-6 h-6 text-[#10B981]" />
+                    </div>
+                    <span className="text-xl font-sans font-bold text-white">
+                        EcoTrack <span className="text-[#10B981]">AI</span>
+                    </span>
+                </Link>
         {setSidebarOpen && (
           <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-slate-300">
             <X className="w-6 h-6" />
