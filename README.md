@@ -3,11 +3,7 @@
 ### AI-Powered Sustainability, Carbon Tracking & Green Funding Platform
 
 <p align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/268102aa-1703-4ab3-a8c1-2863b10bd625"
-    alt="EcoTrack AI Dashboard"
-    width="100%"
-  />
+  <img width="1392" height="907" alt="image" src="https://github.com/user-attachments/assets/caa6bb75-6dfa-499f-9c56-fb30e3622d17" />
 </p>
 
 <p align="center">
